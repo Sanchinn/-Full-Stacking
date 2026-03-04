@@ -1,0 +1,19 @@
+#teste1 { border-style: dotted;}
+#teste2 { border-style: dashed;}
+#teste3 { border-style: solid;}
+
+#p {
+    display: inline-block;
+
+}
+
+p:hover {
+    background-color: blue;
+
+}
+
+#teste4 {
+    border-style: inset;
+    border-width: 300px;
+    height: 100px;
+}
