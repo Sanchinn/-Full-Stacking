@@ -1,49 +1,102 @@
-#cplus {
-    width: 100px;
-    height: 100px;
+body{
+background-color: lightgrey;
+font-family: SansSerif;
+text-align:center;
 }
 
-#java {
-    width: 100px;
-    height: 100px;
 
+/* TOPO */
+#cplus{
+width:100px;
+height:100px;
 }
 
-#id1 {
-    display: inline;
-    color: darkred;
-
+#java{
+width:100px;
+height:100px;
 }
 
-#id2 {
-    display: inline;
-    color: darkred;
+h1{
+color:darkgreen;
 }
 
-#id3 {
-    display: inline;
-    color: darkred;
+
+/* MENU */
+#id1{
+display:inline;
+color:darkred;
+font-weight:bold;
+margin:40px;
 }
 
-#id4 {
-    display: inline;
-    color: darkred;
+#id2{
+display:inline;
+color:darkred;
+font-weight:bold;
+margin:40px;
 }
 
-#book1 {
-    
-    width: 200px;
-    height: 200px;
+#id3{
+display:inline;
+color:darkred;
+font-weight:bold;
+margin:40px;
 }
 
-#book2 {
-    
-    width: 200px;
-    height: 200px;
+#id4{
+display:inline;
+color:darkred;
+font-weight:bold;
+margin:40px;
 }
 
-#book3 {
-    
-    width: 200px;
-    height: 200px;
+
+/* TEXTO */
+.texto{
+color:darkmagenta;
+font-size:20px;
+width:80%;
+margin:auto;
+margin-bottom:20px;
+}
+
+
+/* LIVROS */
+#book1{
+width:200px;
+height:200px;
+margin:30px;
+}
+
+#book2{
+width:200px;
+height:200px;
+margin:30px;
+}
+
+#book3{
+width:200px;
+height:200px;
+margin:30px;
+}
+
+
+/* TABELA */
+table{
+margin:auto;
+border:3px dashed red;
+padding:10px;
+border-collapse:collapse;
+}
+
+td{
+padding:10px;
+border:1px solid gray;
+}
+
+
+/* RODAPÉ */
+h9{
+font-family:"Comic Sans MS";
+font-size:15pt;
 }
