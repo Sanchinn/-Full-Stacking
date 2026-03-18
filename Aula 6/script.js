@@ -13,3 +13,8 @@ function mensagem(){
     alert("Olá!")
 }
 
+mensagem{}
+mensagem{}
+mensagem{"Fagner"};
+mensagem{"Pimentel"};
+
