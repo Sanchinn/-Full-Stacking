@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+}
+
+/* TOPO */
+.topo {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.banner {
+    width: 250px;
+}
+
+/* MENU SUPERIOR */
+.menu-topo {
+    margin: 10px;
+}
+
+.menu-topo a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* LINKS */
+.links {
+    margin: 15px;
+}
+
+/* LOGO */
+.logo img {
+    width: 300px;
+    margin: 20px;
+}
+
+/* CONTEÚDO */
+.conteudo {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* IMAGEM */
+.imagem img {
+    width: 300px;
+}
+
+/* MENU LATERAL */
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-lateral li {
+    margin: 8px 0;
+    text-align: left;
+}
+
+/* FRASE */
+.frase {
+    margin-top: 20px;
+    color: gray;
+    font-weight: bold;
+}
+
+/* RODAPÉ */
+.rodape {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: blue;
+}
