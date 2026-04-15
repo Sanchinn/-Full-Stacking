@@ -4,17 +4,25 @@ var ctx = canvas.getContext("2d");
 let retangulo_1 = {
     x: 0,
     y: 0,
-    w: 100,
-    h: 100,
+    w: 50,
+    h: 50,
     color: "red",
 };
 
 let retangulo_2 = {
     x: 0,
     y: 0,
-    w: 100,
-    h: 100,
-    color: "red",
+    w: 50,
+    h: 50,
+    color: "blue",
+};
+
+let retangulo_3 = {
+    x: 200,
+    y: 200,
+    w: 50,
+    h: 50,
+    color: "green",
 };
 
 function desenha_retangulo(ret){
@@ -25,7 +33,17 @@ function desenha_retangulo(ret){
     ctx.closePath();
 }
 
-let mov = 1
+function desenha_bola(){
+
+    img= new Image()
+    img.src = "bola.webp"
+
+    ctx.beginPath();
+    ctx.drawImage(img, 200, 200, 50, 50);
+    ctx.closePath();
+}
+
+let mov = 1;
 function desenhar(){
     ctx.clearRect(0,0,400,400)
 
@@ -36,6 +54,8 @@ function desenhar(){
 
     desenha_retangulo(retangulo_1)
     desenha_retangulo(retangulo_2)
+    desenha_retangulo(retangulo_3)
+    desenha_bola();
 
     requestAnimationFrame(desenhar)
 }
@@ -46,10 +66,20 @@ document.addEventListener("keydown",function(evento){
     var tecla = evento.key;
     console.log(tecla);
 
-    var vel = 5;
+    var vel = 10;
 
     if(tecla == "ArrowUp") {retangulo_2.y -= vel}
     if(tecla == "ArrowDown") {retangulo_2.y += vel}
     if(tecla == "ArrowLeft") {retangulo_2.x -= vel}
     if(tecla == "ArrowRight") {retangulo_2.x += vel}
 });
+
+document.addEventListener('mousemove', function(evento){
+    var rect = canvas.getBoundingClientRect();
+    var x_mouse = evento.clientX - rect.left;
+    var y_mouse = evento.clientY - rect.top;
+    console.log(x_mouse, y_mouse);
+
+    retangulo_3.x = x_mouse;
+    retangulo_3.y = y_mouse;
+})
