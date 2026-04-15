@@ -31,10 +31,8 @@ function desenharLinha(ctx, x1, y1, x2, y2, cor) {
   ctx.beginPath();
   ctx.lineWidth = 2;
   ctx.strokeStyle = cor;
-
   ctx.moveTo(x1, y1);
   ctx.lineTo(x2, y2);
-
   ctx.stroke();
   ctx.closePath();
 }
@@ -84,7 +82,6 @@ desenharArco(ctx, 438, 260, 22, 0, Math.PI * 2, "green", "green");
 //  Água (curva)
 ctx.beginPath();
 ctx.fillStyle = "dodgerblue";
-
 ctx.moveTo(0, 380);
 ctx.quadraticCurveTo(80, 300, 160, 380);
 ctx.lineTo(160, 500);
