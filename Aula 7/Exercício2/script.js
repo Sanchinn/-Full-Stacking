@@ -44,7 +44,7 @@ desenhar_Arco(ctx, 420, 80, 40, 0, Math.PI * 2, "yellow", "yellow");
 desenhar_Retangulo(ctx, 0, 300, 500, 200, "gray");
 
 // Casa (corpo)
-desenhar_Retangulo(ctx, 200, 220, 100, 100, "#8B4513");
+desenhar_Retangulo(ctx, 200, 220, 100, 100, "brown");
 
 // Janelas
 desenhar_Retangulo(ctx, 215, 240, 25, 25, "deepskyblue");
@@ -60,12 +60,12 @@ ctx.fill();
 
 
 // Árvore esquerda
-desenhar_Retangulo(ctx, 70, 260, 15, 60, "#8B4513");
+desenhar_Retangulo(ctx, 70, 260, 15, 60, "brown");
 desenhar_Arco(ctx, 78, 240, 25, 0, Math.PI * 2, "green", "green");
 
 
 //  Árvore direita
-desenhar_Retangulo(ctx, 430, 280, 15, 40, "#8B4513");
+desenhar_Retangulo(ctx, 430, 280, 15, 40, "brown");
 desenhar_Arco(ctx, 438, 260, 22, 0, Math.PI * 2, "green", "green");
 
 
