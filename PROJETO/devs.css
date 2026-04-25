@@ -1,5 +1,36 @@
 body {
-    background-image: 
-    background-size: cover;
+    background-color: cornflowerblue;
     
 }
+
+div {
+
+}
+
+h1 {
+
+
+}
+
+.intro-flex {
+    display: flex;
+    background-color: powderblue;
+    justify-content: center;
+
+}
+
+.flex-container {
+    display: flex;
+    background-color:powderblue;
+
+}
+
+.flex-container div {
+    background-color: white;
+    margin: 20px ;
+    padding: 40px ;
+    font-size: 30px ;
+    width: 400px;
+    flex-direction: row;
+    }
+
