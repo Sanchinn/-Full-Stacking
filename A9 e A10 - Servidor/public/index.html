@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Servidor</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Servidor Rodando...</h1>
+        <h2>Gabriel Henrique Santana de Oliveira</h2>
+
+        <h3>Exemplos de formulários</h3>
+        
+        <form action="/inicio">
+            <input type="text" name="text">
+            <br>
+            <input type="number" name="number">
+            <br>
+            <input type="checkbox">
+            <br>
+            <input type="radio">
+            <br>
+            <input type="color">
+            <br>
+            <input type="date">
+            <br>
+            <input type="email">
+            <br>
+            <input type="password">
+            <br>
+            <input type="submit" value="Enviar por GET" formmethod="get">
+            <input type="submit" value="Enviar por POST" formmethod="post">
+        </form>
+
+        <h3>Exemplos de Cadastro</h3>
+        <form method="post" action="/cadastro">
+            <p>nome: <input type="text" name="nome"></p>
+            <p>login: <input type="text" name="login"></p>
+            <p>senha: <input type="password" name="senha"></p>
+            <input type="submit" value="Cadastrar">
+        </form>
+
+        <h3>Exemplo de uso de for no ejs</h3>
+        <form method="get" action="/for">
+            <p>Indique a quantidade de DIVs:</p>
+            <input type="number" name="qtde">
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
